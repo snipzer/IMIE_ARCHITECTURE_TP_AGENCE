@@ -6,9 +6,9 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-class ObjectWriterUtils {
+public class ObjectWriterUtils {
 
-    static void writeToFile(List<Agence> agences) {
+    public static void writeToFile(List<Agence> agences) {
         try (
                 FileOutputStream fileOut = new FileOutputStream("./savedEntity/agence.txt");
                 ObjectOutputStream out = new ObjectOutputStream(fileOut)

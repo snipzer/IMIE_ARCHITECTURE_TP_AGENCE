@@ -1,9 +1,9 @@
-import banque.utils.MenuConsoleUtils;
+import banque.core.MenuConsole;
 
 public class Main {
 
     public static void main(String[] args) {
-        MenuConsoleUtils menuConsole = new MenuConsoleUtils();
+        MenuConsole menuConsole = new MenuConsole();
         menuConsole.process();
 
         // TODO Ajouter un compte a une agence

@@ -1,19 +1,21 @@
-package banque.utils;
+package banque.core;
 
 import banque.agence.Agence;
+import banque.utils.ErrorUtils;
+import banque.utils.ObjectWriterUtils;
+import banque.utils.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class MenuConsoleUtils {
-
+public class MenuConsole {
 
     private final Scanner sc = new Scanner(System.in);
     private List<Agence> agences;
     private Agence agence;
 
-    public MenuConsoleUtils() {
+    public MenuConsole() {
         this.agences = new ArrayList<>();
     }
 
